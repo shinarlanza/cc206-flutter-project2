@@ -78,14 +78,20 @@ class _MyHomePageState extends State<MyHomePage> {
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
+            Image.network('https://raw.githubusercontent.com/programmerako23/test01/main/test03.jpg', height: 180, width: 180),
+            Column(children: <Widget>[
+              Text(
+                'You have pushed the button this many times:',
+              ),
+              Text(
+                '$_counter',
+                style: TextStyle(fontSize: 25),
+              ),
+            ]),
             Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: TextStyle(fontSize: 25),
+              'Edited by: Sheina Arlanza and Albert Anthony Polong',
             ),
           ],
         ),
@@ -98,3 +104,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+
+ 
